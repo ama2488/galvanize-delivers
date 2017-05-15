@@ -3053,6 +3053,7 @@ td, th {
     text-align: left;
   }
   table.responsive-table thead {
+    font-weight: bold;
     display: block;
     float: left;
   }
@@ -3462,6 +3463,7 @@ input[type=range] + .thumb {
 
 .section.no-pad-bot {
   padding-bottom: 0;
+  background-color: grey;
 }
 
 .section.no-pad-top {
@@ -6762,6 +6764,13 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav.fixed.right-aligned {
   right: 0;
   left: auto;
+}
+
+nav a.right-aligned {
+  float:right;
+  right:0;
+  top:0;
+  left:auto;
 }
 
 @media only screen and (max-width: 992px) {

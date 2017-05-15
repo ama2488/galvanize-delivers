@@ -1,0 +1,21 @@
+.banner{
+  background-image:url('../img/hero.jpg');
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+.active-link {
+  background-color: #135BAD;
+  padding-left:15px;
+}
+
+.card-title{
+  font-size: 50%;
+  display:block;
+}
+
+.footer_link{
+  margin-right: 100px;
+}
