@@ -4,8 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Galvanize Delivers</title>
-
-  <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/site.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -163,75 +161,8 @@
     </div>
   </div>
 </footer>
-
-
-<!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
-<script>
-$('document').ready(function(){
-
-  let subTotal = 0;
-  let tax = 0;
-  let total = 0;
-  let orderIds = ['Royale with Cheese','Arugula Pie','Ice Cream Biscuit','Smoked Swine'];
-  let name;
-  let address;
-  let phone;
-
-  function addToCart (itemId) {
-    let card = document.getElementById(itemId).parentNode.parentNode
-    let newRow = document.createElement('tr');
-    let name = document.createElement('td');
-    let price = document.createElement('td');
-    let cost =  card.id * 1;
-    console.log(card);
-
-
-    name.innerHTML = (itemId);
-    price.innerHTML = "$" + cost;
-    price.setAttribute('class','align-text-right');
-
-    subTotal = +(subTotal+cost).toFixed(2);
-    tax = +(subTotal * .07).toFixed(2);
-    total = +(subTotal + tax).toFixed(2);
-
-    document.getElementById('subtotal').innerHTML = '$' + subTotal;
-    document.getElementById('tax').innerHTML = '$' + tax;
-    document.getElementById('total').innerHTML = '$' + total;
-
-    newRow.appendChild(name);
-    newRow.appendChild(price);
-    document.getElementById('cart').appendChild(newRow);
-
-  }
-
-  for (let i = 0; i<orderIds.length; i++) {
-    document.getElementById(orderIds[i]).addEventListener('click',function(){
-      addToCart(this.id);
-    });
-  }
-
-  document.getElementById('submit_order').addEventListener('click', function() {
-    name = document.getElementById('icon_prefix').value;
-    phone = document.getElementById('icon_telephone').value;
-    address = document.getElementById('icon_address').value;
-
-    if(subTotal === 0) {
-      return Materialize.toast('Ops! There are no items in your cart.', 3000, 'rounded');
-    } else if(!name || !address || !phone){
-      return Materialize.toast('Please ensure all fields are filled out.', 3000, 'rounded');
-    }
-    else {
-      return Materialize.toast('Thank you! Your order is on it\'s way.', 3000, 'rounded');
-    }
-  })
-
-  $(".button-collapse").sideNav();
-
-});
-</script>
-
-
+<script src='delivers.js'></script>
 </body>
 </html>
