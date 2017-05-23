@@ -22,147 +22,145 @@
       </ul>
     </div>
   </nav>
-  <div class="container">
-    <div class="section">
+
+  <main class="container">
+    <section class='row'>
+      <article class="col s12 m7">
+        <header class = 'menu_header'>
+          <h3>Menu</h3>
+        </header>
+        <article class="col s12 m6">
+          <section class="card hoverable" id = '8.99'>
+            <div class="card-image">
+              <img src="img/burger.jpg">
+            </div>
+            <div class="card-content">
+              <span class = "card-title">Royale with Cheese</span>
+              <p>$8.99</p>
+            </div>
+            <div class="card-action">
+              <a class = "pink-text" href = '#' id = 'Royale with Cheese'>Add to Order</a>
+            </div>
+          </section>
+
+          <section class="card hoverable"  id = '7.99'>
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+            </div>
+            <div class="card-content">
+              <span class = "card-title">Ice Cream Biscuit</span>
+              <p>$7.99</p>
+            </div>
+            <div class="card-action">
+              <a class = "pink-text" href = "#" id = 'Ice Cream Biscuit'>Add to Order</a>
+            </div>
+          </section>
+        </article>
+
+        <article class="col s12 m6">
+          <section class="card hoverable" id = '11.99'>
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+            </div>
+            <div class="card-content">
+              <span class = "card-title">Arugula Pie</span>
+              <p>$11.99</p>
+            </div>
+            <div class="card-action">
+              <a class = "pink-text" href = '#' id = 'Arugula Pie'>Add to Order</a>
+            </div>
+          </section>
+
+          <section class="card hoverable" id = '14.99'>
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+            </div>
+            <div class="card-content">
+              <span class = "card-title">Smoked Swine</span>
+              <p>$14.99</p>
+            </div>
+            <div class="card-action">
+              <a class = "pink-text" href = '#' id = 'Smoked Swine'>Add to Order</a>
+            </div>
+          </section>
+        </article>
+      </article>
+
+      <article class="col s12 m5">
+        <header class = 'cart_header'>
+          <h3>Order</h3>
+        </header>
+        <table class = 'striped'>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th class = 'align-text-right'>Price</th>
+            </tr>
+          </thead>
+          <tbody id = 'cart'>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class = 'align-text-right'>Subtotal</td>
+              <td class = 'align-text-right' id = 'subtotal'>$0.00</td>
+            </tr>
+            <tr>
+              <td class = 'align-text-right'>Tax</td>
+              <td class = 'align-text-right' id = 'tax'>$0.00</td>
+            </tr>
+            <tr>
+              <td class = 'align-text-right'>Total</td>
+              <td class = 'align-text-right' id = 'total'>$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+        <form>
+          <article class="row">
+            <section class="input-field col s10 offset-s1">
+              <i class="material-icons prefix pink-text">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Name</label>
+            </section>
+            <section class="input-field col s10 offset-s1">
+              <i class="material-icons prefix pink-text">phone</i>
+              <input id="icon_telephone" type="tel" class="validate" default = "555-555-5555">
+              <label for="icon_telephone">Phone</label>
+            </section>
+            <section class="input-field col s10 offset-s1">
+              <i class="material-icons prefix pink-text">business</i>
+              <textarea id="icon_address" class="materialize-textarea validate"></textarea>
+              <label for="icon_address">Address</label>
+            </section>
+            <section class="row center">
+              <a id="submit_order" class="btn-large waves-effect waves-light pink">PLACE ORDER</a>
+            </section>
+          </article>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="page-footer no-pad-bot blue darken-3">
+    <section class="container">
       <div class="row">
-        <div class="col s12 m7">
-          <header class = 'menu_header'>
-            <h3>Menu</h3>
-          </header>
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card hoverable" id = '8.99'>
-                <div class="card-image">
-                  <img src="img/burger.jpg">
-                </div>
-                <div class="card-content">
-                  <span class = "card-title">Royale with Cheese</span>
-                  <p>$8.99</p>
-                </div>
-                <div class="card-action">
-                  <a class = "pink-text" href = '#' id = 'Royale with Cheese'>Add to Order</a>
-                </div>
-              </div>
-              <div class="card hoverable"  id = '7.99'>
-                <div class="card-image">
-                  <img src="img/ice_cream.jpg">
-                </div>
-                <div class="card-content">
-                  <span class = "card-title">Ice Cream Biscuit</span>
-                  <p>$7.99</p>
-                </div>
-                <div class="card-action">
-                  <a class = "pink-text" href = "#" id = 'Ice Cream Biscuit'>Add to Order</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card hoverable" id = '11.99'>
-                <div class="card-image">
-                  <img src="img/pizza.jpg">
-                </div>
-                <div class="card-content">
-                  <span class = "card-title">Arugula Pie</span>
-                  <p>$11.99</p>
-                </div>
-                <div class="card-action">
-                  <a class = "pink-text" href = '#' id = 'Arugula Pie'>Add to Order</a>
-                </div>
-              </div>
-              <div class="card hoverable" id = '14.99'>
-                <div class="card-image">
-                  <img src="img/ribs.jpg">
-                </div>
-                <div class="card-content">
-                  <span class = "card-title">Smoked Swine</span>
-                  <p>$14.99</p>
-                </div>
-                <div class="card-action">
-                  <a class = "pink-text" href = '#' id = 'Smoked Swine'>Add to Order</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine dining, Delivered.</p>
         </div>
-        <div class="col s12 m5">
-          <header class = 'cart_header'>
-            <h3>Order</h3>
-          </header>
-          <table class = 'striped'>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th class = 'align-text-right'>Price</th>
-              </tr>
-            </thead>
-
-            <tbody id = 'cart'>
-            </tbody>
-
-            <tfoot>
-              <tr>
-                <td class = 'align-text-right'>Subtotal</td>
-                <td class = 'align-text-right' id = 'subtotal'>$0.00</td>
-              </tr>
-              <tr>
-                <td class = 'align-text-right'>Tax</td>
-                <td class = 'align-text-right' id = 'tax'>$0.00</td>
-              </tr>
-              <tr>
-                <td class = 'align-text-right'>Total</td>
-                <td class = 'align-text-right' id = 'total'>$0.00</td>
-              </tr>
-            </tfoot>
-          </table>
-          <div class="row">
-            <div class="row">
-              <div class="input-field col s10 offset-s1">
-                <i class="material-icons prefix pink-text">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Name</label>
-              </div>
-              <div class="input-field col s10 offset-s1">
-                <i class="material-icons prefix pink-text">phone</i>
-                <input id="icon_telephone" type="tel" class="validate" default = "555-555-5555">
-                <label for="icon_telephone">Phone</label>
-              </div>
-              <div class="input-field col s10 offset-s1">
-                <i class="material-icons prefix pink-text">business</i>
-                <textarea id="icon_address" class="materialize-textarea validate"></textarea>
-                <label for="icon_address">Address</label>
-              </div>
-              <div class="row center">
-                <a id="submit_order" class="btn-large waves-effect waves-light pink">PLACE ORDER</a>
-              </div>
-            </div>
-          </form>
+        <div class = 'col s3'>
+          <a href="order.html" class = "right-aligned white-text footer_link">Order Delivery</a>
+          <a href="index.html" class = "right-aligned white-text footer_link">Home</a>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<footer class="page-footer no-pad-bot blue darken-3">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Galvanize Delivers</h5>
-        <p class="grey-text text-lighten-4">Fine dining, Delivered.</p>
+    </section>
+    <section class="footer-copyright darken-4">
+      <div class="container">
+        © 2017 Galvanize Delivers
       </div>
-      <div class = 'col s3'>
-        <a href="order.html" class = "right-aligned white-text footer_link">Order Delivery</a>
-        <a href="index.html" class = "right-aligned white-text footer_link">Home</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright darken-4">
-    <div class="container">
-      © 2017 Galvanize Delivers
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src='delivers.js'></script>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src='delivers.js'></script>
 </body>
 </html>
